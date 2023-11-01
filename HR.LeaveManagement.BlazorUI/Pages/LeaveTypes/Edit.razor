@@ -1,0 +1,5 @@
+﻿@page "/leaveTypes/edit/{id:int}"
+
+@attribute [Authorize(Roles = "Administrator")]
+
+<FormComponent ButtonText="Update" LeaveType="LeaveType" OnValidSubmit="@UpdateLeaveType" />
